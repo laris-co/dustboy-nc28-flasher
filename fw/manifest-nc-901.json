@@ -1,6 +1,6 @@
 {
   "name": "DustBoy NC28 · NC-901",
-  "version": "v26.11.26-1500",
+  "version": "v26.11.26-1557",
   "new_install_prompt_erase": true,
   "builds": [
     { "chipFamily": "ESP32-S3", "parts": [ { "path": "nc-901.factory.bin", "offset": 0 } ] }

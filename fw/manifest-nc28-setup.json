@@ -1,6 +1,6 @@
 {
   "name": "DustBoy NC28 · NC28-SETUP",
-  "version": "v26.11.27-2328",
+  "version": "v26.11.28-0006",
   "new_install_prompt_erase": true,
   "builds": [
     { "chipFamily": "ESP32-S3", "parts": [ { "path": "nc28-setup.factory.bin", "offset": 0 } ] }

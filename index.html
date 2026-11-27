@@ -94,17 +94,18 @@ function App() {
         <h2 class="font-display text-lg font-medium text-band3">2 · หลังแฟลช</h2>
         <ol class="mt-2 space-y-2">
           <${Step} n="1">แคปซูลมุมขวาบนนับถอยหลังระหว่างรอ Wi-Fi<//>
-          <${Step} n="2">แตะ <b class="inline-flex items-center gap-1"><${Gear} /> NC-xxx</b> → เลือก Wi-Fi → ใส่รหัส → <b>Join</b><//>
+          <${Step} n="2">แตะ <b class="inline-flex items-center gap-1"><${Gear} /> NC28</b> → เลือก Wi-Fi → ใส่รหัส → <b>Join</b><//>
           <${Step} n="3">หมดเวลาโดยไม่ได้ตั้ง: เปิด hotspot แคปซูลกะพริบ <b>AP</b><//>
+          <${Step} n="4">ต่อ Wi-Fi ได้แล้ว: เปิดหน้า <b class="inline-flex items-center gap-1"><${Gear} /> NC28</b> ถ่ายรูปการ์ดที่มี IP กับ MAC ส่งให้ทีม<//>
         </ol>
       </div>
     </section>
 
     <section class="mt-6 rounded-2xl bg-band3/15 p-5 ring-1 ring-band3/40">
       <h2 class="font-display text-lg font-medium text-band3">อิมเมจนี้คือ “bootstrap”</h2>
-      <p class="mt-2 text-cream/90">อิมเมจสาธารณะไม่มีรหัสใด ๆ ของระบบ (MQTT, OTA, API) — หน้าจอ Wi-Fi และการวัดทำงานครบ
-      แต่ยังไม่ส่งข้อมูลขึ้นเซิร์ฟเวอร์ เมื่อเครื่องต่อ Wi-Fi แล้ว ทีม DustBoy จะติดตั้งเฟิร์มแวร์ตัวจริงให้ผ่าน OTA
-      (จอจะขึ้นแถบ “Updating firmware…”)</p>
+      <p class="mt-2 text-cream/90">ทุกเครื่องใช้อิมเมจเดียวกัน และไม่มีรหัสใด ๆ ของระบบ (MQTT, OTA, API) — หน้าจอ ทัช Wi-Fi และการวัดทำงานครบ
+      แต่ยังไม่ส่งข้อมูลขึ้นเซิร์ฟเวอร์ เครื่องจะชื่อ <${Code}>nc28-setup-xxxxxx<//> (ท้ายชื่อคือ MAC) เมื่อต่อ Wi-Fi แล้ว
+      ทีม DustBoy จะลงเฟิร์มแวร์ตัวจริงพร้อมเลขเครื่อง NC ให้ผ่าน OTA (จอจะขึ้นแถบ “Updating firmware…”)</p>
     </section>
 
     <footer class="mt-8 text-sm text-cream/50">

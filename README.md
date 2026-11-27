@@ -9,7 +9,8 @@ over USB. One HTML file: React (esm.sh + htm), Tailwind (browser build) and
 ## What is in this repo
 
 - `index.html` — the flasher page
-- `fw/manifest-<device>.json` + `fw/<device>.factory.bin` — ESPHome factory images (offset 0)
+- `fw/manifest-nc28-setup.json` + `fw/nc28-setup.factory.bin` — one bootstrap image for every board (offset 0);
+  the board names itself `nc28-setup-<mac>` and gets its NC number with the OTA firmware
 - `fw/devices.json` — the device list the page offers
 
 ## Bootstrap image, no secrets
@@ -20,7 +21,7 @@ setup and sensors work; data is not sent. Once the board is on Wi-Fi, the DustBo
 the real firmware over OTA.
 
 Firmware source is not in this repo. Images are built from the private firmware tree with
-`PUBLIC=1 ./build.sh <id>`.
+`PUBLIC=1 ./build.sh`.
 
 ## After flashing
 
